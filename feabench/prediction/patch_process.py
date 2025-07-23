@@ -122,8 +122,9 @@ def create_patch_by_compare_file(segments, files):
 
             # calc differ start offset
             differ_start_offset = 0
-            max_len = min(len(old_content_for_match), len(new_content_for_match))
-            while differ_start_offset < max_len and new_content_for_match[differ_start_offset] == old_content_for_match[differ_start_offset]:
+            min_len = min(len(old_content_for_match), len(new_content_for_match))
+            max_len = max(len(old_content_for_match), len(new_content_for_match))
+            while differ_start_offset < min_len and new_content_for_match[differ_start_offset] == old_content_for_match[differ_start_offset]:
                 differ_start_offset += 1
 
             # if there is no difference continue
@@ -133,7 +134,7 @@ def create_patch_by_compare_file(segments, files):
 
             # calc differ end offset
             differ_end_offset = -1
-            while differ_end_offset > - max_len and new_content_for_match[differ_end_offset] == old_content_for_match[differ_end_offset]:
+            while differ_end_offset > - min_len and new_content_for_match[differ_end_offset] == old_content_for_match[differ_end_offset]:
                 differ_end_offset -= 1
             
             if len(aligned_indices) != 1:
