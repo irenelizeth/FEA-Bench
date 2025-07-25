@@ -1,4 +1,31 @@
-# FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation for Feature Implementation
+<p align="center">
+  <a href="https://gmago-leway.github.io/fea-bench.github.io/">
+    <img src="assets/FEA-Bench-full.png" style="height: 10em" alt="fea-bench" />
+  </a>
+</p>
+
+<p align="center">
+  <em>A benchmark that aims to evaluate the capability of implementing new features in the code repositories.</em>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2503.06680">
+        <img alt="paper" src="https://img.shields.io/badge/ArXiv-%23B31B1B?style=for-the-badge&logo=arXiv">
+  </a>
+  <a href="./LICENSE">
+        <img alt="License" src="https://img.shields.io/github/license/SWE-bench/SWE-bench?style=for-the-badge">
+  </a>
+  <a href="https://gmago-leway.github.io/fea-bench.github.io/">
+        <img alt="Leaderboard" src="https://img.shields.io/badge/leaderboard-%F0%9F%8F%86-1?style=for-the-badge">
+  </a>
+  <a href="https://huggingface.co/datasets/microsoft/FEA-Bench">
+        <img alt="dataset" src="https://img.shields.io/badge/Dataset-HF-FFD21E.svg?style=for-the-badge&logo=huggingface&logoColor=FFD21E">
+  </a>
+</p>
+
+---
+
+# Evaluation
 
 This repository is the official implementation of the paper "FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation for Feature Implementation." It can be used for baseline evaluation using the prompts mentioned in the paper.
 
