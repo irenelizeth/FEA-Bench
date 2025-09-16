@@ -18,6 +18,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 logger = logging.getLogger(__name__)
 
 MODEL_LIMITS = {
+    "GCP/claude-4-sonnet" : 200_000,
     "claude-4-sonnet": 200_000,
     "claude-instant-1": 100_000,
     "claude-2": 100_000,
@@ -45,6 +46,7 @@ MODEL_LIMITS = {
 
 # The cost per token for each model input.
 MODEL_COST_PER_INPUT = {
+    "GCP/claude-4-sonnet": 0.00006,
     "claude-4-sonnet": 0.00006,
     "claude-instant-1": 0.00000163,
     "claude-2": 0.00001102,
@@ -77,6 +79,7 @@ MODEL_COST_PER_INPUT = {
 
 # The cost per token for each model output.
 MODEL_COST_PER_OUTPUT = {
+    "GCP/claude-4-sonnet": 0.000015,
     "claude-4-sonnet": 0.000015,
     "claude-instant-1": 0.00000551,
     "claude-2": 0.00003268,
